@@ -215,7 +215,8 @@ class Header(object):
 
     def __init__(self, name, label=None, column_name=False, is_sortable=True):
         self.name = name
-        self.label = label or pretty_name(name)
+        self.label = label
+        # self.label = label or pretty_name(name)
         if is_sortable:
             self.column_name = column_name or name
         self.is_sortable = is_sortable

@@ -54,7 +54,7 @@ class MultiForm(object):
         if prefix is None:
             prefix = key
         else:
-            prefix = '{0}_{1}'.format(key, prefix)
+            prefix = '{0}__{1}'.format(key, prefix)
         fkwargs.update(
             initial=self.initials.get(key),
             prefix=prefix,
